@@ -1,3 +1,3 @@
-export default function getStudentsByLocation(getListStudents(), city) {
-  return getListStudents().filter((getListStudents()) => getListStudents().location === city);
+export default function getStudentsByLocation(std = getListStudents(), city) {
+  return std.filter((std) => std.location === city);
 }
