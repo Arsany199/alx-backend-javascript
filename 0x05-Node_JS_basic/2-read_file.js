@@ -10,8 +10,8 @@ function countStudents(path) {
 
     for (const line of lines) {
       if (line.trim() !== '' && i > 0) {
-        countStudents = countStudents + 1;
-				const [fname, lname, age, field] = line.split(',');
+        countStudents += 1;
+        const [fname, lname, age, field] = line.split(',');
         if (!fields[field]) {
           fields[field] = {
             count: 1,
@@ -26,14 +26,13 @@ function countStudents(path) {
           };
         }
       }
-      i = i + 1;
+      i += 1;
     }
 
     console.log(`Number of students: ${countStudents}`);
     for (const field of Object.keys(fields)) {
       const n = fields[field].count;
       const names = fields[field].students.join(', ');
-      // console.log(`Number of students in ${field}: ${n}. List: ${names}`);
       console.log(`Number of students in ${field}: ${n}. List: ${names}`);
     }
   } catch (error) {
