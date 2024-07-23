@@ -1,6 +1,6 @@
 const express = require('express');
 
-const localhost = '127.0.0.1';
+const localhost = 'localhost';
 const port = 1245;
 const app = express();
 
