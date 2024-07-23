@@ -1,5 +1,5 @@
 process.stdout.write('Welcome to Holberton School, what is your name?\n');
-process.stdin.on('mydata', (mydata) => {
+process.stdin.on('data', (mydata) => {
   process.stdout.write(`Your name is: ${mydata}`);
 });
 
