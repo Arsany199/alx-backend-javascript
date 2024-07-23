@@ -8,7 +8,7 @@ const app = http.createServer((req, res) => {
 });
 
 app.listen(port, localhost, () => {
-  console.log(`Server running at http://${localhost}:${port}`);
+  console.log(`Server running at //${localhost}:${port}`);
 });
 
 module.exports = app;
