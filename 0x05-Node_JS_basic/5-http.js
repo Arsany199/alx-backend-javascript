@@ -1,8 +1,8 @@
 const http = require('http');
 const fs = require('fs');
 
-const PORT = 1245;
-const HOST = 'localhost';
+const port = 1245;
+const localhost = '127.0.0.1';
 const app = http.createServer();
 const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
 
@@ -106,8 +106,8 @@ app.on('request', (req, res) => {
   }
 });
 
-app.listen(PORT, HOST, () => {
-  process.stdout.write(`Server listening at -> http://${HOST}:${PORT}\n`);
+app.listen(port, localhost, () => {
+  process.stdout.write(`Server running at http://${localhost}:${port}\n`);
 });
 
 module.exports = app;
