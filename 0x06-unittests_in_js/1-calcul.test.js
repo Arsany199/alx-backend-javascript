@@ -2,7 +2,7 @@ const assert = require('assert');
 const calculateNumber = require('./1-calcul');
 
 describe('calculateNumber', () => {
-  describe('type === "sum"', () => {
+  describe('type == "sum"', () => {
     it('equal +ve numbers', () => {
       assert.equal(calculateNumber(SUM, 3.0, 3.0), 6);
     });
