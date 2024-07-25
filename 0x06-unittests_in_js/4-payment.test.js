@@ -1,7 +1,7 @@
-const sendPaymentRequestToApi = require('./4-payment');
 const sinon = require('sinon');
 const Utils = require('./utils');
 const { expect } = require('chai');
+const sendPaymentRequestToApi = require('./4-payment');
 
 describe('sendPaymentRequestToApi', () => {
   it('sendPaymentRequestToApi calls console.log with arguments', () => {
