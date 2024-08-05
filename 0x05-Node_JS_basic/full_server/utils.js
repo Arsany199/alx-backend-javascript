@@ -27,4 +27,3 @@ async function readDatabase(filePath) {
 }
 
 module.exports = { readDatabase };
-
