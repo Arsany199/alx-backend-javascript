@@ -1,6 +1,6 @@
 const express = require('express');
 
-const app = express();
+const myapp = express();
 const myport = 7865;
 
 app.get('/', (_, res) => {
@@ -11,4 +11,4 @@ app.listen(myport, () => {
   console.log(`API available on localhost port ${myport}`);
 });
 
-module.exports = app;
+module.exports = myapp;
